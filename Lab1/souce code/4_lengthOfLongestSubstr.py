@@ -1,6 +1,5 @@
 b = 'pwwkew'
 
-
 def lengthOfLongestSubstr(word):
     """Function takes in a string and finds the longest substring and returns the length
     and characters of the substring
@@ -32,8 +31,6 @@ def lengthOfLongestSubstr(word):
     substr = ""
     for i in seen.keys():
         substr += i
-
     return longest,substr
-
 
 print(lengthOfLongestSubstr(b))

@@ -6,7 +6,6 @@ class Person:
     def returnName(self):
         return self.__name
 
-
 class Employee(Person):
     """An employee class that inherits from person class, keeps track of salary and
     number of employees"""
@@ -19,8 +18,6 @@ class Employee(Person):
 
     def returnSalary(self):
         return self.salary
-
-
 
 class fulltimeEmployee(Employee):
     """Fulltime employee class that inherits from employee"""
@@ -55,8 +52,7 @@ class passenger(Person,flight):
         and randomly assigns a seat from the list in flight"""
         self.bookingID = random.randint(1000,10000)
         self.seat = random.choice(flight.seats)
-        
-    
+
     def getBookingID(self):
         #returns an ID if passenger has booked a flight
         if self.bookingID is None: return None
@@ -66,7 +62,6 @@ class passenger(Person,flight):
         #returns seat if passenger has booked a flight
         if self.seat is None: return None
         return self.seat
-
 
 Dante = passenger("Dante")
 Tutu = fulltimeEmployee("Tutu",98990,40)
